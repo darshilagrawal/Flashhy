@@ -15,8 +15,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuth.h"
-#import "FirebaseCore/Sources/Private/FIRLogger.h"
+#import "FirebaseAuth/Sources/Public/FIRAuth.h"
 #import "Interop/Auth/Public/FIRAuthInterop.h"
 
 @class FIRAuthRequestConfiguration;
@@ -144,9 +143,5 @@ NS_ASSUME_NONNULL_BEGIN
     (nullable FIRAuthDataResultCallback)callback;
 
 @end
-
-/// Logger Service String
-
-extern FIRLoggerService kFIRLoggerAuth;
 
 NS_ASSUME_NONNULL_END
