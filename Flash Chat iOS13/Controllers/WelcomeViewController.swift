@@ -17,20 +17,20 @@ class WelcomeViewController: UIViewController {
         navigationController?.isNavigationBarHidden=true
         super.viewWillAppear(animated)
     }
+    
     override func viewWillDisappear(_ animated: Bool) {
         navigationController?.isNavigationBarHidden=false
         super.viewWillDisappear(animated)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         titleLabel.text=""
         animationView.play()
         animationView.loopMode = .loop
-        
-        
         var index = 0.0
-        for letter in K.appName{
+        for letter in K.appName {
             Timer.scheduledTimer(withTimeInterval: index*0.1, repeats: false) { (Timer) in
                 self.titleLabel.text?.append(letter)
             }
